@@ -6,6 +6,8 @@ import About from "./Components/About/About";
 import Services from "./Components/Services/Services";
 import Blog from "./Components/Blog/Blog";
 import Contact from "./Components/Contact/Contact";
+import Registration from "./Components/User/Registration";
+import Login from "./Components/User/Login";
 
 function App() {
   const router = createBrowserRouter([
@@ -36,6 +38,14 @@ function App() {
         {
           path: "/contact",
           element: <Contact></Contact>,
+        },
+        {
+          path: "/register",
+          element: <Registration></Registration>,
+        },
+        {
+          path: "/login",
+          element: <Login></Login>,
         },
       ],
     },
